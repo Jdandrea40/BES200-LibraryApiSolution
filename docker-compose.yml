@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  cache:
+    image: redis:latest
+    ports: 
+      - 6379:6379
+  messaging:
+    image: rabbitmq:management
+    ports: 
+      - 15671:15671
+      - 15672:15672
+      - 5672:5672
+    
